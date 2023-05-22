@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(253, 247, 247); 
+    color: black; 
+    font-family: Arial; 
+    margin: 0px;
+}
+
+header {
+    background:white;
+    color: black; 
+    padding: 2px; 
+    
+}
+header:hover{
+    font-size: 16pt;
+    color: black;
+}
+header:active{
+    font-size: 10pt;
+    color: black;
+}
+
+main{
+    margin: 10px 20px;
+}
+
+footer {
+    background:gray; 
+    color: lightgrey; 
+    padding: 10px; 
+    font-size: 16pt; 
+    font-style: italic; 
+    text-align: right;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer:hover{
+    font-size: 16pt;
+    color: lightgray;
+}
+footer:active{
+    font-size: 10pt;
+    color: lightgray;
+}
+a {
+    text-decoration: none;
+    color: green;
+    transition: 600ms 2s;
+    text-shadow: 7px 5px 3px green;
+}
+
+a:visited{
+    color: blue;
+    background-color: white;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+    background-color: white;
+    font-weight: bold;
+    transition: 600ms 300ms;
+}
+
+a:active {
+    color: pink;
+    background-color: green;
+}
