@@ -11,10 +11,7 @@ header {
     padding: 2px; 
     
 }
-header:hover{
-    font-size: 16pt;
-    color: black;
-}
+
 header:active{
     font-size: 10pt;
     color: black;
@@ -37,19 +34,17 @@ footer {
     width: 100%;
 }
 
-footer:hover{
-    font-size: 16pt;
-    color: lightgray;
-}
+
 footer:active{
     font-size: 10pt;
     color: lightgray;
 }
 a {
     text-decoration: none;
-    color: green;
-    transition: 600ms 2s;
-    text-shadow: 7px 5px 3px green;
+    color: black;
+    transition: 400ms 2s;
+    margin: -20px 50px 20px 70px;
+    
 }
 
 a:visited{
@@ -58,14 +53,10 @@ a:visited{
 }
 
 a:hover {
-    color: red;
+    color: rgb(0, 0, 128);
     text-decoration: underline;
     background-color: white;
     font-weight: bold;
-    transition: 600ms 300ms;
+    transition: 300ms 250ms;
 }
 
-a:active {
-    color: pink;
-    background-color: green;
-}
