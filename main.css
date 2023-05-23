@@ -1,8 +1,12 @@
 body {
-    background-color: rgb(253, 247, 247); 
+    background-color: rgb(250, 248, 248); 
     color: black; 
     font-family: Arial; 
     margin: 0px;
+    text-align: justify;
+    font-size: large;
+    text-indent: 25px;
+    font-size: 16px;
 }
 
 header {
@@ -28,10 +32,11 @@ footer {
     font-size: 16pt; 
     font-style: italic; 
     text-align: right;
-    position: fixed;
+    position: relative;
     right: 0;
     bottom: 0;
     width: 100%;
+    left: -20px;
 }
 
 
@@ -42,8 +47,13 @@ footer:active{
 a {
     text-decoration: none;
     color: black;
-    transition: 400ms 2s;
-    margin: -20px 50px 20px 70px;
+    margin-right: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+    font-size: 18px;
+    margin-left: 90px;
+    
     
 }
 
@@ -59,4 +69,6 @@ a:hover {
     font-weight: bold;
     transition: 300ms 250ms;
 }
+
+
 
