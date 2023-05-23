@@ -7,6 +7,32 @@
     <title>Залевская Ольга Сергеевна. РГЗ</title>
     <link rel="stylesheet" href="main.css">
 </head>
+<script>
+    function a(){
+     let data = ['3-04-2023', '4-04-2023', '5-04-2023', '6-04-2023', '7-04-2023',
+                        '10-04-2023', '11-04-2023', '12-04-2023', '13-04-2023', '14-04-2023',
+                        '17-04-2023', '18-04-2023', '19-04-2023', '20-04-2023', '21-04-2023',
+                        '24-04-2023', '25-04-2023', '26-04-2023', '27-04-2023', '28-04-2023'];
+            let kurs = [1910,2000,1995,1990,2035,2080,2000,1980,1970,1975,2030,2015,1990,1995,
+                        1970,1985,1965,1915,1925,1985];
+            let table = document.getElementById('table');
+            let min = Math.min(...kurs);
+            document.getElementById('min').innerHTML = 'Минимальное значение: ' + min;
+            let max = Math.max(...kurs);
+            document.getElementById('max').innerHTML = 'Максимальное значение: ' + max;
+            let sum = 0;
+            for (let i = 0; i < kurs.length; i++) {
+            sum += kurs[i];
+            }
+            let avg = sum / kurs.length;
+            let variance = 0;
+            for (let i = 0; i < kurs.length; i++) {
+            variance += Math.pow(kurs[i] - avg, 2);
+            }
+            let otklonenie = Math.sqrt(variance / kurs.length);
+            document.getElementById('otklonenie').innerHTML = 'Среднеквадратическое отклонение: ' + otklonenie;
+    }
+</script>
 <body>
 
     <header>
@@ -25,7 +51,7 @@
 
         <h2>Таблица с ценами закрытия за весь апрель</h2>
 
-        <table border="2" style="text-align: center;">
+        <table border="2" style="text-align: center;" id="table">
             <tr>
                 <td><b>Дата</b></td>
                 <td><b>Данные</b></td>
@@ -111,6 +137,10 @@
                 <td>1 895</td>
             </tr>
         </table>
+        <button onclick="a()">Вычислить</button>
+        <div id="min" style="font-weight: bolder;">Минимальное значение: </div>
+        <div id="max" style="font-weight: bolder;">Максимальное значение: </div>
+        <div id="otklonenie" style=" font-weight: bolder;">Среднеквадратическое отклонение: </div>
 
     </main>
 
